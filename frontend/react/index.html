@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotação Inteligente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-body">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  <body>
+</html>
+
+    <script>
+      // Apply global theme before React mounts
+      try {
+        const mode = localStorage.getItem('themeMode')
+        if (mode === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark')
+          document.documentElement.style.backgroundColor = '#0b1220'
+          document.body.style.backgroundColor = '#0b1220'
+          document.documentElement.style.color = '#e5e7eb'
+          document.body.style.color = '#e5e7eb'
+        } else {
+          document.documentElement.removeAttribute('data-theme')
+          document.documentElement.style.backgroundColor = '#ffffff'
+          document.body.style.backgroundColor = '#ffffff'
+          document.documentElement.style.color = '#0f172a'
+          document.body.style.color = '#0f172a'
+        }
+      } catch {}
+    </script>
