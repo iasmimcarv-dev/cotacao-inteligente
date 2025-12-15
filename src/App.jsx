@@ -18,16 +18,18 @@ function App() {
     <div className={'min-h-screen'}>
       <div className="mx-auto max-w-7xl px-4 py-8">
         <header
-          className={`mb-8 rounded-2xl header-gradient-animate p-8 shadow-lg-refined`}
+          className={`mb-8 rounded-2xl header-gradient-premium p-8 shadow-lg-refined relative overflow-hidden`}
         >
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+          <div className="header-particles"></div>
+          <div className="header-shine"></div>
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between relative z-10">
             <div className="flex-1">
               <p
-                className={`text-sm font-semibold uppercase tracking-widest ${headerTextSub}`}
+                className={`text-sm font-semibold uppercase tracking-widest ${headerTextSub} animate-fade-in-down`}
               >
                 Planos de Saúde
               </p>
-              <h1 className="mt-3 text-4xl font-bold text-white leading-tight">
+              <h1 className="mt-3 text-4xl font-bold text-white leading-tight animate-fade-in-up animate-text-shimmer">
                 Cotação Inteligente
               </h1>
               <p className={`mt-3 text-base leading-relaxed ${headerTextSub}`}>
